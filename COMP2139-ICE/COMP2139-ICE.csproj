@@ -7,4 +7,21 @@
         <RootNamespace>COMP2139_ICE</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+        <!-- EF Core 9 -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+
+        <!-- Scaffolding (optional, fine to keep) -->
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+
+        <!-- PostgreSQL EF provider + driver -->
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.1" />
+        <PackageReference Include="Npgsql" Version="9.0.1" />
+    </ItemGroup>
+
 </Project>
+
